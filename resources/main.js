@@ -3,6 +3,7 @@ const ctx = canvas.getContext("2d");
 
 const darkSquareColor = "#305E7E";
 const lightSquareColor = "#FAF6EC";
+const squareLength = canvas.width / 8;
 
 const boardState = [
   ["dR", "dN", "dB", "dK", "dQ", "dB", "dN", "dR"],
@@ -20,10 +21,10 @@ for (let i = 0; i < 8; i++) {
   for (let j = 0; j < 8; j++) {
     if (i % 2 == 0) {
       ctx.fillStyle = j % 2 == 0 ? darkSquareColor : lightSquareColor;
-      ctx.fillRect(i*135, j*135, 135, 135);
+      ctx.fillRect(i*squareLength, j*squareLength, squareLength, squareLength);
     } else {
       ctx.fillStyle = j % 2 != 0 ? darkSquareColor : lightSquareColor;
-      ctx.fillRect(i*135, j*135, 135, 135);
+      ctx.fillRect(i*squareLength, j*squareLength, squareLength, squareLength);
     }
   }
 }
