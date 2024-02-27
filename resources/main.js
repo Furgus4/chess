@@ -1,8 +1,8 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = 1080;
-canvas.height = 1080;
+canvas.width = 405;
+canvas.height = 405;
 
 const darkSquareColor = "#305E7E";
 const lightSquareColor = "#FAF6EC";
